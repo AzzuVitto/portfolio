@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Caudex&display=swap');
+
+body {
+    background-image: url('../images/grunge-wall-texture.jpg');
+    font-family: Caudex;
+    color: rgba(245, 245, 245, 1);
+    margin: 0;
+    overflow-y: hidden;
+}
+main{
+    display: flex;
+    width: fit-content;
+}
+.image {
+
+    height: 2558px;
+    width: 372px;
+}
+
+.image .rectangle {
+    background-color: rgba(228, 89, 232, 0.4);
+    height: 100vh;
+    object-fit: cover;
+    width: 333px;
+}
+
+.portContainerTwo {
+    background-color: rgba(255, 255, 255, 0.479);
+    width: 100vw;
+    height: 100vh;
+    /* z-index: 0; */
+}
+
+#bg {
+    width: 100vw;
+    height: 100vw;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+hr {
+    width: 20%;
+    text-align: center;
+}
+
+h1 {
+    font-weight: initial;
+}
+
+h2 {
+    font-weight: initial;
+    font-size: 20px;
+
+}
+
+#info {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.titre {
+    padding-top: 200px;
+    text-align: center;
+}
+
+
+#one {
+    text-align: center;
+}
+
+#port {
+    color: rgba(218, 140, 220, 1);
+
+
+}
+
+.portContainer {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+
+}
+
+
+
+#scroll {
+    position: absolute;
+    right: 50px;
+    bottom: 100px;
+    /* overflow-x: scroll */
+}
+
+#one,
+#two,
+#three,
+#scroll {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+#one:hover,
+#two:hover,
+#three:hover,
+#scroll:hover {
+    background: linear-gradient(to bottom, rgba(219, 140, 220, 0.471), rgba(255, 255, 255, 0));
+}
+
+
+
+
+@media (max-width:768px) {
+    .titre {
+        text-align: center;
+    }
+}
