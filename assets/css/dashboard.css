@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&family=Lexend+Zetta:wght@100..900&display=swap');
+
+
+body{
+    background-color: rgba(71, 47, 71, 0.627); 
+    font-family: 'Lexend Zetta', sans-serif;
+    color: white;
+}
+h3 {
+    text-align: center;
+    color:  rgb(131, 21, 94);;
+}
+#oneProject {
+    display: flex;
+
+    align-items: center;
+    flex-wrap: wrap;
+}
+.projects {
+    border-radius: 5px;
+    border: solid 1px black;
+    width: 300px;
+    height: 300px;
+    box-shadow: 18px 11px 18px #040404fc;
+}
+a {
+    text-decoration: none;
+    color:black
+}
+.actions {
+   text-align: center;
+   margin-bottom: 20px;
+}
+
+.container {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+    border-radius: 8px;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input,
+textarea,
+button {
+    margin-bottom: 16px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+   
+}
+
+button:hover {
+    background-color: #45a049;
+}
+.hidden{
+    display: none;
+}
+#pp{
+text-align: center;
+}

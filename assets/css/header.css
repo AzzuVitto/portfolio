@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&family=Lexend+Zetta:wght@100..900&display=swap');
+
+header {
+    background-image: url('../images/grunge-wall-texture.jpg');
+    font-family: 'Lexend Zetta', sans-serif;
+    padding: 5px;
+}
+#zero,
+#one,
+#two,
+#three,
+#four,
+#five,
+#scroll {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+#zero:hover,
+#one:hover,
+#two:hover,
+#three:hover,
+#four:hover,
+#five:hover {
+    background: linear-gradient(to bottom, rgba(219, 140, 220, 0.471), rgba(255, 255, 255, 0));
+}
+
+#one,
+#two {
+    text-align: center;
+}
+
+#info {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+a {
+    text-decoration: none;
+}
