@@ -1,15 +1,38 @@
+{% block style %}
+	<link rel="stylesheet" href="/css/header.css">
+{% endblock %}
 <header>
 	<div id='info'>
-		<a href="#portContainerTwo">
-			<div id='one'>
-				A propos de moi
+	<a href="#portContainer">
+			<div id='zero'>
+				<div>Accueil</div>
 			</div>
 		</a>
-		<div id='two'>
-			<p>Mes projets</p>
-		</div>
-		<div id='three'>
-			<p>Contacts</p>
-		</div>
+		<a href="#portContainerTwo">
+			<div id='one'>
+				<div>A propos de moi</div>
+			</div>
+		</a>
+		<a href="#portContainerThree">
+			<div id='two'>
+				<div>Mes projets</div>
+			</div>
+			
+		</a>
+		<a href="#portContainerFour">
+			<div id='three'>
+				<div>Contacts</div>
+			</div>
+		</a>
+		{% if admin is defined %}
+			<div>
+				<a id="four" href="/addProject">Ajouter un projet</a>
+			</div>
+			<div>
+				<a id='five' href="/logout">Deconnexion</a>
+			</div>
+		{% endif %}
+
+
 	</div>
 </header>

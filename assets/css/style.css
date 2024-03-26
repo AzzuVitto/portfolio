@@ -1,34 +1,127 @@
-@import url('https://fonts.googleapis.com/css2?family=Caudex&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&family=Lexend+Zetta:wght@100..900&display=swap');
 
 body {
     background-image: url('../images/grunge-wall-texture.jpg');
-    font-family: Caudex;
+    font-family: 'Lexend Zetta', sans-serif;
     color: rgba(245, 245, 245, 1);
     margin: 0;
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
+    font-weight: 200;
 }
-main{
+
+main {
     display: flex;
     width: fit-content;
-}
-.image {
-
-    height: 2558px;
-    width: 372px;
+    transition: transform 0.5s ease;
 }
 
-.image .rectangle {
+.about {
+    overflow: hidden;
+    display: inline-block;
+    white-space: nowrap;
+    animation: defilement-rtl 15s infinite linear;
+    padding: 10px 2em 10px 100%;
+
+}
+
+#test {
     background-color: rgba(228, 89, 232, 0.4);
-    height: 100vh;
-    object-fit: cover;
-    width: 333px;
 }
 
-.portContainerTwo {
-    background-color: rgba(255, 255, 255, 0.479);
+.contacts {
+    background-color: rgba(228, 89, 232, 0.4);
+}
+
+.descript,
+.projects {
+    text-align: center;
+    margin: 200px;
+    margin-top: 100px;
+}
+
+#portContainerTwo h2 {
+    color: black;
+}
+
+#portContainerTwo {
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.25);
     width: 100vw;
     height: 100vh;
-    /* z-index: 0; */
+    color: white;
+}
+
+.portContainerThree {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(196, 148, 198, 0.35);
+
+}
+
+.portContainerFour {
+    background-color: rgb(186 152 203 / 17%);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact-form {
+    padding: 80px;
+    width: 300px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    background: none;
+    color: #fff;
+}
+
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    outline: none;
+    font-size: 14px;
+
+}
+
+.form-group .line {
+    height: 1px;
+    background-color: #ddd;
+    margin-top: 5px;
+}
+
+.form-group button[type="submit"] {
+    background-color: rgba(228, 89, 232, 0.4);
+    font-family: 'Lexend Zetta', sans-serif;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.portContainerTree,
+.portContainerFour h2 {
+    text-align: center;
 }
 
 #bg {
@@ -47,80 +140,100 @@ hr {
     text-align: center;
 }
 
-h1 {
-    font-weight: initial;
-}
-
+h1,
 h2 {
-    font-weight: initial;
+    font-weight: 200;
     font-size: 20px;
-
+    text-align: center
 }
 
-#info {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
 
 .titre {
     padding-top: 200px;
     text-align: center;
 }
 
-
-#one {
-    text-align: center;
-}
-
 #port {
     color: rgba(218, 140, 220, 1);
-
-
 }
 
-.portContainer {
+#portContainer {
     position: relative;
     height: 100vh;
     width: 100vw;
 
 }
 
-
-
 #scroll {
     position: absolute;
     right: 50px;
     bottom: 100px;
-    /* overflow-x: scroll */
+
 }
 
-#one,
-#two,
-#three,
-#scroll {
+.aboutimg {
     display: flex;
-    align-items: center;
     justify-content: center;
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    color: white;
-    transition: background-color 0.3s ease;
+}
+.works {
+    text-align: center;
 }
 
-#one:hover,
-#two:hover,
-#three:hover,
-#scroll:hover {
-    background: linear-gradient(to bottom, rgba(219, 140, 220, 0.471), rgba(255, 255, 255, 0));
+.works.img {
+    border-radius: 5px;
+    border: solid 1px black;
+    width: 150px;
+    height: 150px;
+    box-shadow: 18px 11px 18px #040404fc;
 }
 
+.works img:hover {
 
-
+    transform: scale(2.10);
+}
+img,
+#calanque,
+#vucciria,
+#palerme {
+    border-radius: 5px;
+    box-shadow: 18px 11px 18px #040404fc;
+    }
+    #vucciria {
+        transform: rotate(12deg); 
+    }  
+    #calanque {
+        transform: rotate(337deg);
+    }
+    #palerme {
+        transform: rotate(343deg);
+    }
+#logo{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-top: 100px;
+}
+.me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 @media (max-width:768px) {
     .titre {
         text-align: center;
+    }
+}
+
+
+@keyframes defilement-rtl {
+    0% {
+        -webkit-transform: translate(0);
+        transform: translate(0);
+    }
+
+    100% {
+        -webkit-transform: translate(-100%);
+        transform: translate(-100%);
     }
 }

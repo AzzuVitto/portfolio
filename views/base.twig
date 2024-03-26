@@ -6,24 +6,27 @@
 
 
 		{% block style %}
-			<link rel="stylesheet" href="css/style.css">
+			<link rel="stylesheet" href="/css/style.css">
 
 		{% endblock %}
+
 		<title>Document</title>
 	</head>
 	<body>
 		{% block header %}
 			{% include "./layout/header.twig" %}
+
 		{% endblock %}
-<main>
-{% block main %}{% endblock %}
-</main>
-		
+
+		<main>
+			{% block main %}{% endblock %}
+		</main>
+
 
 		{% block footer %}
 			{% include "./layout/footer.twig" %}
 		{% endblock %}
-        
-        <script src= 'js/script.js'></script>
+
+		<script src='js/script.js'></script>
 	</body>
 </html>

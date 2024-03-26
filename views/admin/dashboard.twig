@@ -1,0 +1,43 @@
+{% extends "adminbase.twig" %}
+
+{% block main %}
+	<div>
+		<h2>DASHBOARD</h2>
+
+	</div>
+	<div class="popup hidden" id="popup">
+		{% include "admin/_addProject.twig" %}
+	</div>
+	<div>
+		<button class="add-button" onclick="displayModal()">Ajouter un Projet</button>
+	</div>
+
+	<div id='oneProject'>
+		{% for project in projects %}
+
+			<article class='projects'>
+				<div>
+					<h3>{{project.title}}</h3>
+				</div>
+				<p  id = "pp">
+					{{project.description}}</p>
+				<p id = "pp">
+					<img src="/images/uploads/{{project.image}}"   height="100" width="150" alt="">
+				</p>
+
+				<div class='actions'>
+					<div>
+						<a href="/projectUpdate/{{project.id}}">Modifier le projet</a>
+					</div>
+					<div>
+						<a href="/projectDelete/{{project.id}}">Supprimer le projet</a>
+					</div>
+
+				</div>
+			</article>
+
+		{% endfor %}
+	</div>
+
+
+{% endblock %}

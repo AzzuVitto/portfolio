@@ -1,8 +1,11 @@
 const mainRouter = require('express').Router()
-
-mainRouter.get('/', (req, res) =>  {
+const projectModel = require('../models/projectModel')
+mainRouter.get('/', async(req, res) =>  {
     try{
-        res.render("home/index.twig")
+        const projects = await projectModel.find()
+        res.render("home/index.twig",{
+            projects: projects
+        })
     } catch(error){
         res.render(error)
     }

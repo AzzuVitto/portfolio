@@ -1,0 +1,27 @@
+{% extends "adminbase.twig" %}
+
+{% block main %}
+<div class="container">
+        <h2>Modifier</h2>
+		
+        <form action="/projectUpdate/{{project.id}}" method="post" enctype ="multipart/form-data">
+            <label for="projectName">Nom du Projet:</label>
+            <input type="text" id="projectName" name="title" value="{{project.title}}" >
+
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" rows="4" value="{{project.description}}"></textarea>
+
+            <label for="url">URL:</label>
+            <input type="url" id="url" name="url" value="{{project.url}}" >
+
+            <label for="githubUrl">URL GitHub:</label>
+            <input type="url" id="githubUrl" name="gitUrl" value="{{project.gitUrl}}">
+
+            <label for="image">Image:</label>
+            <input type="file" id="image" name="image" accept="image/*" value="{{project.image}}">
+
+            <button type="submit">Valider</button>
+        </form>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,89 @@
+<div class="container">
+        <h2>Ajouter un Projet</h2>
+		<span onclick="displayModal()">&times;</span>
+        <form action="/addProject" method="post" enctype ="multipart/form-data">
+            <label for="projectName">Nom du Projet:</label>
+            <input type="text" id="projectName" name="title" >
+
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" rows="4" ></textarea>
+
+            <label for="url">URL:</label>
+            <input type="url" id="url" name="url" >
+
+            <label for="githubUrl">URL GitHub:</label>
+            <input type="url" id="githubUrl" name="gitUrl">
+
+            <label for="image">Image:</label>
+            <input type="file" id="image" name="image" accept="image/*" >
+
+            <button type="submit">Valider</button>
+        </form>
+    </div>
+
+
+
+
+
+
+{# {% extends "base.twig" %}
+
+{% block style %}
+	<link rel="stylesheet" href="/css/addProject.css">
+{% endblock %}
+
+{% block title %}
+	<title>{{title}}</title>
+{% endblock %}
+{% block main %}
+	<main>
+		<section>
+		<div>
+		<h2>Ajouter un projet</h2>
+		</div>
+		<form method='post' enctype="multipart/form-data"   action = './addProject'>
+		   <div>
+					<label for="projectTitle">Titre du project</label>
+					<input id="projectTitle" type='text' name='title' value = {{project.title}}>
+					{% if error %}
+						<p>{{error.errors.name.title}}</p>
+					{% endif %}
+				</div>
+
+				<div>
+					<label for="description">Description du project</label>
+					<input id="description" type='text' name='description' value = {{project.description}}>
+					{% if error %}
+						<p>{{error.errors.name.description}}</p>
+					{% endif %}
+				</div>
+				<div>
+					<label for="url">Url  du project</label>
+					<input id="url" type='text' name='url'  value = {{project.url}}>
+					{% if error %}
+						<p>{{error.errors.name.url}}</p>
+					{% endif %}
+				</div>
+				<div>
+					<label for="urlGit">GitUrl du project</label>
+					<input id="urlGit" type='text' name='gitUrl'  value = {{project.gitUrl}}>
+					{% if error %}
+						<p>{{error.errors.name.gitUrl}}</p>
+					{% endif %}
+				</div>
+				<div>
+					<label for="image">Image du projet</label>
+					<input id="image" type='file' name='image'  value = {{project.image}}>
+					{% if error %}
+						<p>{{error.errors.name.image}}</p>
+					{% endif %}
+				</div>
+				<div>
+					<button type='submit'>Envoyer</button>
+				</div>
+
+			</form>
+
+		</section>
+	</main>
+{% endblock %} #}

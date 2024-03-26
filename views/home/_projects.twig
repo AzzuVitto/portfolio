@@ -1,0 +1,26 @@
+<section class="portContainerThree" id='portContainerThree'>
+	<h2>MES PROJETS</h2>
+
+	<div class="projects"></div>
+	<p>
+		Mon portfolio reflète mes réalisations concrètes et mon      
+		 engagement envers l'excellence technique.  
+		 Venez découvrir comment mes compétences variées peuvent enrichir vos projets.
+	</p>
+
+	<div class="works">
+		{% for project in projects %}
+			<a href="{{project.gitUrl}}">
+				<img src="/images/uploads/{{project.image}}" height="100" width="150" alt="project.title">
+			</a>
+		{% endfor %}
+</div>
+	<div id='logo'>
+    <img src="/images/css.png" height="20" width="20" alt="">
+		<img src="/images/sql.png" height="20" width="20" alt="">
+		<img src="/images/mongodb.png" height="20" width="20" alt="">
+		<img src="/images/nodejs.png" height="20" width="20" alt="">
+		<img src="/images/html.png" height="20" width="20" alt="">
+		<img src="/images/git.png" height="20" width="20" alt="">
+		<img src="/images/css.png" height="20" width="20" alt=""></div>
+</section>
